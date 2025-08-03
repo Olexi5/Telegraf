@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TELEGRAF</title>
+    <title>TELEGRAPH</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,20 +13,37 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">Telegraph</a>
-      <a href="">Try Beta</a>
+    <header class="container header">
+      <a href="./index.html" class="logo">Telegraph</a>
+      <a href="" class="try">Try Beta</a>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>Simple. Secure. Reliable messaging.</h1>
-          <p>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <h2 class="modal-title">Sign up</h2>
+          <button type="button" data-modal-close class="btn-close"><svg class="close-svg"><use href="./images/symbol-defs.svg#icon-cross"></use></svg></button>
+          <form action="" class="modal-form">
+            <label for="" class="modal-label">Email
+              <input class="modal-input" type="email" placeholder="Your email..." required>
+            </label>
+            <input class="modal-input" type="password" placeholder="Your password...">
+            <input class="modal-input" type="tel" placeholder="Your phone number...">
+            <label for="">
+              <input class="input" type="checkbox" required>Погоджуюся з політикою конфіденційності
+            </label>
+            <button type="submit" class="modal-btn">Send</button>
+          </form>
+        </div>
+      </div>
+      <section class="container hero">
+        <div class="inf">
+          <h1 class="title">Simple. Secure. Reliable messaging.</h1>
+          <p class="hero-text">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum.
           </p>
-          <button type="button">Request For early Ac</button>
+          <button type="button" data-modal-open>Request For early Ac</button>
         </div>
         <img src="./images/hero.png" alt="hero pictures" />
       </section>
@@ -145,5 +162,6 @@
         <li><a href="">Facebook</a></li>
       </ul>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>

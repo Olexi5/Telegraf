@@ -1,67 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    color: #00194A;
-;
-}
-
-.container{
-    width: 1154px;
-    margin: 0 auto;
-    padding: 0 15px;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #00194a;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-.simple{
-    display: flex;
-    gap:15px;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 170px;
+.simple {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 170px;
 }
 .simple-text-wrap {
-    width: 466px;
+  width: 466px;
 }
-.simple-title {  
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 1.3;
-    margin-bottom: 30px;
+.simple-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.3;
+  margin-bottom: 30px;
 }
-.simple-img-wrap{
-    position: relative;
+.simple-img-wrap {
+  position: relative;
 }
 .simple-oval {
-    position: absolute;
-    top:-85px;
-    left:-99px;
-    z-index: -1;
+  position: absolute;
+  top: -85px;
+  left: -99px;
+  z-index: -1;
 }
 .simple-boy {
 }
 .simple-message-list {
-    position: absolute;
-    bottom: -70px;
-    right:-207px;
+  position: absolute;
+  bottom: -70px;
+  right: -207px;
 }
 .simple-message-item:nth-child(2) {
-    position: relative;
-    left: 25px;
+  position: relative;
+  left: 25px;
 }
 .simple-message-item:nth-child(3) {
-    position: relative;
-    left: 50px;
+  position: relative;
+  left: 50px;
+}
+.header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.try {
+  padding: 15px 20px;
+  background-color: #ff0043;
+  border-radius: 23px;
+  box-shadow: 0px 5px 50px 0px #ff00431a;
+  color: #ffffff;
+}
+.hero {
+  display: flex;
+  gap: 38px;
+}
+.inf {
+  margin-top: 113px;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 85px;
+  letter-spacing: 0px;
+  color: #00194a;
+  margin-bottom: 20px;
+  width: 552px;
+}
+.hero-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #00194A;
+  margin-bottom: 50px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+.modal {
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 100px #3d3d3d6b;
+  padding: 20px;
+}
+.is-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.close-svg {
+  width: 30px;
+  height: 30px;
+}
+.btn-close {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal-title {
+  margin-bottom: 30px;
+}
+.modal-input {
+  padding: 15px 140px 15px 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+.modal-btn {
+  width: 100px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #ff0043;
+  border: none;
+  color: #fff;
+  display: block;
+}
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #ff0043;
+}
+.modal-label {
+  display: block;
+}
+.input {
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
